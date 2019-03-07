@@ -490,7 +490,6 @@ int main(void)
  274:	1f 93       	push	r17
  276:	cf 93       	push	r28
  278:	df 93       	push	r29
-		/* Replace with your application code */
     LCD_Initalize();
  27a:	0e 94 cc 00 	call	0x198	; 0x198 <LCD_Initalize>
 	LCD_Clear();
@@ -506,7 +505,7 @@ int main(void)
  28a:	ff 2e       	mov	r15, r31
  28c:	f0 2d       	mov	r31, r0
 	LCD_GoTo(3,1);
-	LCD_WriteText("SUPER! :-)");
+	LCD_WriteText("SUPER! B-)");
  28e:	0f 2e       	mov	r0, r31
  290:	fd e6       	ldi	r31, 0x6D	; 109
  292:	cf 2e       	mov	r12, r31
@@ -517,7 +516,7 @@ int main(void)
  29c:	1e e4       	ldi	r17, 0x4E	; 78
  29e:	cc e2       	ldi	r28, 0x2C	; 44
  2a0:	d1 e0       	ldi	r29, 0x01	; 1
-		/* Replace with your application code */
+{
     LCD_Initalize();
 	LCD_Clear();
 	while(1)
@@ -533,7 +532,7 @@ int main(void)
  2b0:	83 e0       	ldi	r24, 0x03	; 3
  2b2:	61 e0       	ldi	r22, 0x01	; 1
  2b4:	0e 94 ba 00 	call	0x174	; 0x174 <LCD_GoTo>
-	LCD_WriteText("SUPER! :-)");
+	LCD_WriteText("SUPER! B-)");
  2b8:	c6 01       	movw	r24, r12
  2ba:	0e 94 ab 00 	call	0x156	; 0x156 <LCD_WriteText>
  2be:	98 01       	movw	r18, r16

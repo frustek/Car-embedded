@@ -11,7 +11,6 @@
 
 int main(void)
 {
-		/* Replace with your application code */
     LCD_Initalize();
 	LCD_Clear();
 	while(1)
@@ -19,7 +18,7 @@ int main(void)
 	LCD_GoTo(2,0);
 	LCD_WriteText("Klaudia jest");
 	LCD_GoTo(3,1);
-	LCD_WriteText("SUPER! :-)");
+	LCD_WriteText("SUPER! B-)");
 	_delay_ms(2000);
 	}
 }
